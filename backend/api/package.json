@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API da Lojinha",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --env-file=../../.env src/server.js",
+    "migrate": "node --env-file=../../.env src/migrate.js",
+    "test": "node --test tests/preco.test.js",
+    "test:integration": "node --env-file=../../.env --test tests/produtos.integration.test.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0"
+  }
+}
